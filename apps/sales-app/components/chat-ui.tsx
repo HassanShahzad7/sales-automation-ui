@@ -86,10 +86,15 @@ function SessionsSidebar() {
           </div>
         ) : (
           sessions.map((session) => (
-            <button
+            // biome-ignore lint/a11y/useSemanticElements: delete button nested inside prevents using <button> here
+            <div
               key={session.session_id}
-              type="button"
+              role="button"
+              tabIndex={0}
               onClick={() => handleSwitchSession(session.session_id)}
+              onKeyDown={(e) =>
+                e.key === "Enter" && handleSwitchSession(session.session_id)
+              }
               className={`group flex w-full cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-sidebar-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                 session.session_id === currentSessionId
                   ? "bg-sidebar-accent font-medium text-sidebar-foreground"
@@ -114,7 +119,7 @@ function SessionsSidebar() {
               >
                 <TrashIcon className="size-3" />
               </button>
-            </button>
+            </div>
           ))
         )}
       </div>
