@@ -73,8 +73,13 @@ export async function deleteWorkflow(id: string): Promise<void> {
 export async function getLastExecution(
   workflowId: string,
 ): Promise<N8nExecution | null> {
+  const params = new URLSearchParams({
+    workflowId,
+    limit: "1",
+    includeData: "false",
+  });
   const data = await n8nFetch<N8nListResponse<N8nExecution>>(
-    `/executions?workflowId=${workflowId}&limit=1&includeData=false`,
+    `/executions?${params}`,
   );
   return data.data[0] ?? null;
 }
