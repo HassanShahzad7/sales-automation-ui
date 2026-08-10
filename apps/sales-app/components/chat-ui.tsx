@@ -87,6 +87,9 @@ function SessionsSidebar() {
       </div>
 
       <div className="flex-1 overflow-y-auto px-2 py-1">
+        <p className="px-3 pt-0.5 pb-1 font-semibold text-sidebar-foreground/40 text-xs uppercase tracking-wide">
+          Chats
+        </p>
         {isLoadingSessions ? (
           <div className="space-y-1 px-1">
             {Array.from({ length: 4 }, (_, i) => (
