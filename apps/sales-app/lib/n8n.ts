@@ -25,11 +25,13 @@ type N8nListResponse<T> = {
   nextCursor: string | null;
 };
 
+// Calls go through the Next.js proxy at /api/n8n/* to avoid CORS
+// (browser → same-origin Next.js → n8n at localhost:5678)
 async function n8nFetch<T>(
   path: string,
   options: RequestInit = {},
 ): Promise<T> {
-  const res = await fetch(`${N8N_URL()}/api/v1${path}`, {
+  const res = await fetch(`/api/n8n${path}`, {
     ...options,
     headers: {
       "Content-Type": "application/json",
