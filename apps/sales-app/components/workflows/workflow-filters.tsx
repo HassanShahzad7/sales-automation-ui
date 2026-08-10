@@ -16,13 +16,15 @@ const TABS: { key: WorkflowFilter; label: string }[] = [
 
 export function WorkflowFilters({ filter, counts, onChange }: Props) {
   return (
-    <div className="flex w-fit gap-1 rounded-lg bg-muted p-1">
+    <div className="flex w-fit gap-1 rounded-lg bg-muted p-1" role="tablist">
       {TABS.map((tab) => (
         <button
           key={tab.key}
           type="button"
+          role="tab"
+          aria-selected={filter === tab.key}
           onClick={() => onChange(tab.key)}
-          className={`rounded-md px-3 py-1.5 font-medium text-sm transition-colors ${
+          className={`rounded-md px-3 py-1.5 font-medium text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
             filter === tab.key
               ? "bg-background text-foreground shadow-sm"
               : "text-muted-foreground hover:text-foreground"
