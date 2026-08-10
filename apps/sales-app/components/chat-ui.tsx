@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter, usePathname } from "next/navigation";
 import { useAssistantRuntime } from "@assistant-ui/react";
 import { Thread } from "@/components/assistant-ui/thread";
 import { useSalesRuntime } from "@/lib/runtime-provider";
@@ -8,6 +9,7 @@ import {
   MessageSquareIcon,
   PlusIcon,
   TrashIcon,
+  WorkflowIcon,
 } from "lucide-react";
 
 function SessionsSidebar() {
@@ -20,6 +22,9 @@ function SessionsSidebar() {
   } = useSalesRuntime();
 
   const runtime = useAssistantRuntime();
+
+  const router = useRouter();
+  const pathname = usePathname();
 
   const handleSwitchSession = async (sessionId: string) => {
     if (sessionId === currentSessionId) return;
@@ -112,6 +117,24 @@ function SessionsSidebar() {
             </button>
           ))
         )}
+      </div>
+      {/* Automation section */}
+      <div className="border-sidebar-border border-t px-3 py-2">
+        <p className="px-2 pb-1 font-semibold text-sidebar-foreground/40 text-xs uppercase tracking-wide">
+          Automation
+        </p>
+        <button
+          type="button"
+          onClick={() => router.push("/workflows")}
+          className={`flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-sidebar-accent ${
+            pathname === "/workflows"
+              ? "bg-sidebar-accent font-medium text-sidebar-foreground"
+              : "text-sidebar-foreground/70 hover:text-sidebar-foreground"
+          }`}
+        >
+          <WorkflowIcon className="size-4 shrink-0" />
+          Workflows
+        </button>
       </div>
     </aside>
   );
