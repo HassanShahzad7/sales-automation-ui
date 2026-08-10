@@ -37,10 +37,13 @@ export function WorkflowRow({
 }: Props) {
   const [isToggling, setIsToggling] = useState(false);
   const [isRunning, setIsRunning] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [actionError, setActionError] = useState<string | null>(null);
 
   async function handleToggle() {
     setIsToggling(true);
+    setActionError(null);
     try {
       if (workflow.active) {
         await deactivateWorkflow(workflow.id);
@@ -49,6 +52,10 @@ export function WorkflowRow({
         await activateWorkflow(workflow.id);
         onToggle(workflow.id, true);
       }
+    } catch (e) {
+      setActionError(
+        e instanceof Error ? e.message : "Failed to toggle workflow",
+      );
     } finally {
       setIsToggling(false);
     }
@@ -56,17 +63,29 @@ export function WorkflowRow({
 
   async function handleRun() {
     setIsRunning(true);
+    setActionError(null);
     try {
       await executeWorkflow(workflow.id);
+    } catch (e) {
+      setActionError(e instanceof Error ? e.message : "Failed to run workflow");
     } finally {
       setIsRunning(false);
     }
   }
 
   async function handleDelete() {
-    await deleteWorkflow(workflow.id);
-    onDelete(workflow.id);
-    setShowConfirm(false);
+    setIsDeleting(true);
+    setActionError(null);
+    try {
+      await deleteWorkflow(workflow.id);
+      onDelete(workflow.id);
+      setShowConfirm(false);
+    } catch (e) {
+      setActionError(
+        e instanceof Error ? e.message : "Failed to delete workflow",
+      );
+      setIsDeleting(false);
+    }
   }
 
   const statusColor = workflow.active
@@ -163,10 +182,15 @@ export function WorkflowRow({
             <button
               type="button"
               onClick={() => setShowConfirm(true)}
+              disabled={isDeleting}
               title="Delete workflow"
-              className="flex size-7 items-center justify-center rounded-md bg-muted text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+              className="flex size-7 items-center justify-center rounded-md bg-muted text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive disabled:opacity-50"
             >
-              <Trash2Icon className="size-3" />
+              {isDeleting ? (
+                <span className="size-3 animate-spin rounded-full border-2 border-current border-t-transparent" />
+              ) : (
+                <Trash2Icon className="size-3" />
+              )}
             </button>
           </div>
         </td>
@@ -191,12 +215,22 @@ export function WorkflowRow({
                 <button
                   type="button"
                   onClick={handleDelete}
-                  className="rounded-md bg-destructive px-3 py-1 text-destructive-foreground text-sm hover:bg-destructive/90"
+                  disabled={isDeleting}
+                  className="rounded-md bg-destructive px-3 py-1 text-destructive-foreground text-sm hover:bg-destructive/90 disabled:opacity-50"
                 >
-                  Delete
+                  {isDeleting ? "Deleting…" : "Delete"}
                 </button>
               </div>
             </div>
+          </td>
+        </tr>
+      )}
+
+      {/* Inline error message */}
+      {actionError && (
+        <tr>
+          <td colSpan={5} className="px-4 py-2">
+            <p className="text-destructive text-xs">{actionError}</p>
           </td>
         </tr>
       )}
