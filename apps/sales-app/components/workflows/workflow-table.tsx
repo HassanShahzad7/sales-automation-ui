@@ -38,6 +38,7 @@ export function WorkflowTable({
             {HEADERS.map((h) => (
               <th
                 key={h}
+                scope="col"
                 className="px-4 py-2.5 font-semibold text-muted-foreground text-xs uppercase tracking-wide"
               >
                 {h}
