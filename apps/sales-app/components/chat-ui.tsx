@@ -63,7 +63,7 @@ function SessionsSidebar() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-1 px-3 pb-2">
+      <div className="px-3 pb-2">
         <button
           type="button"
           onClick={handleNewSession}
@@ -71,18 +71,6 @@ function SessionsSidebar() {
         >
           <PlusIcon className="size-4" />
           New Chat
-        </button>
-        <button
-          type="button"
-          onClick={() => router.push("/workflows")}
-          className={`flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-sidebar-accent ${
-            pathname === "/workflows"
-              ? "bg-sidebar-accent font-medium text-sidebar-foreground"
-              : "text-sidebar-foreground/70 hover:text-sidebar-foreground"
-          }`}
-        >
-          <WorkflowIcon className="size-4 shrink-0" />
-          Workflows
         </button>
       </div>
 
@@ -137,6 +125,24 @@ function SessionsSidebar() {
             </div>
           ))
         )}
+      </div>
+
+      <div className="border-sidebar-border border-t px-2 py-2">
+        <p className="px-3 pt-0.5 pb-1 font-semibold text-sidebar-foreground/40 text-xs uppercase tracking-wide">
+          Automation
+        </p>
+        <button
+          type="button"
+          onClick={() => router.push("/workflows")}
+          className={`flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-sidebar-accent ${
+            pathname === "/workflows"
+              ? "bg-sidebar-accent font-medium text-sidebar-foreground"
+              : "text-sidebar-foreground/70 hover:text-sidebar-foreground"
+          }`}
+        >
+          <WorkflowIcon className="size-4 shrink-0" />
+          Workflows
+        </button>
       </div>
     </aside>
   );
