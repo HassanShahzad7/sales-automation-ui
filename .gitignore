@@ -76,6 +76,9 @@ htmlcov/
 # Claude
 **/.claude/scheduled_tasks.lock
 
+# Superpowers brainstorm artifacts
+.superpowers/
+
 # GitHub Spec Kit - https://github.com/github/spec-kit
 .specify/
 specs/*

@@ -66,7 +66,7 @@ function toThreadMessages(
 }
 
 export function RuntimeProvider({ children }: { children: ReactNode }) {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+  const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8001";
 
   const [authState] = useState(() => getAuth());
   const userToken = authState?.userToken ?? null;
@@ -122,7 +122,7 @@ export function RuntimeProvider({ children }: { children: ReactNode }) {
     () =>
       new HttpAgent({
         url: `${API_URL}/api/v1/chatbot/chat/stream`,
-        threadId: currentSessionId ?? undefined,
+        ...(currentSessionId ? { threadId: currentSessionId } : {}),
         headers: {
           Accept: "text/event-stream",
           ...(currentSessionToken

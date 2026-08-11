@@ -114,7 +114,14 @@ export function WorkflowRow({
     <>
       <tr className="border-border border-b transition-colors last:border-0 hover:bg-muted/30">
         <td className="px-4 py-3 font-medium text-foreground text-sm">
-          {workflow.name}
+          <a
+            href={n8nWorkflowUrl(workflow.id)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            {workflow.name}
+          </a>
         </td>
         <td className="px-4 py-3">
           <span
