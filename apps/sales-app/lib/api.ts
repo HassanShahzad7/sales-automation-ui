@@ -66,10 +66,20 @@ export async function createSession(userToken: string): Promise<SessionData> {
   return res.json();
 }
 
+export class AuthError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "AuthError";
+  }
+}
+
 export async function getSessions(userToken: string): Promise<SessionData[]> {
   const res = await fetch(`${API_URL()}/api/v1/auth/sessions`, {
     headers: { Authorization: `Bearer ${userToken}` },
   });
+  if (res.status === 401 || res.status === 403 || res.status === 404) {
+    throw new AuthError("Failed to load sessions");
+  }
   if (!res.ok) throw new Error("Failed to load sessions");
   return res.json();
 }
@@ -82,6 +92,8 @@ export async function deleteSessionById(
     method: "DELETE",
     headers: { Authorization: `Bearer ${sessionToken}` },
   });
+  // 404 means the session is already gone — treat as success
+  if (res.status === 404) return;
   if (!res.ok) throw new Error("Failed to delete session");
 }
 

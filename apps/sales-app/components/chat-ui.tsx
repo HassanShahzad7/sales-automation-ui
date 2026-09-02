@@ -41,7 +41,8 @@ function SessionsSidebar() {
     sessionToken: string,
   ) => {
     e.stopPropagation();
-    await removeSession(sessionId, sessionToken);
+    // removeSession silently succeeds even if the session is already gone on the backend
+    await removeSession(sessionId, sessionToken).catch(() => {});
     if (sessionId === currentSessionId) {
       await runtime.threads.switchToNewThread();
     }

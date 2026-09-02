@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ExternalLinkIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ArrowLeftIcon, ExternalLinkIcon } from "lucide-react";
 import {
   listWorkflows,
   getLastExecution,
@@ -13,6 +14,7 @@ import { WorkflowFilters, type WorkflowFilter } from "./workflow-filters";
 import { WorkflowTable } from "./workflow-table";
 
 export function WorkflowsPage() {
+  const router = useRouter();
   const [workflows, setWorkflows] = useState<N8nWorkflow[]>([]);
   const [executions, setExecutions] = useState<
     Record<string, N8nExecution | null>
@@ -84,11 +86,21 @@ export function WorkflowsPage() {
     <div className="flex h-dvh flex-col gap-6 overflow-y-auto p-6">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <div>
-          <h1 className="font-bold text-foreground text-xl">Workflows</h1>
-          <p className="text-muted-foreground text-sm">
-            Manage your n8n automation workflows
-          </p>
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => router.push("/")}
+            className="rounded-lg p-1.5 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+            title="Back to Sales Assistant"
+          >
+            <ArrowLeftIcon className="size-4" />
+          </button>
+          <div>
+            <h1 className="font-bold text-foreground text-xl">Workflows</h1>
+            <p className="text-muted-foreground text-sm">
+              Manage your n8n automation workflows
+            </p>
+          </div>
         </div>
         <a
           href={n8nNewWorkflowUrl()}

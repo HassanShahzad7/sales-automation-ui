@@ -92,14 +92,21 @@ export function RuntimeProvider({ children }: { children: ReactNode }) {
     api
       .getSessions(userToken)
       .then((sess) => setSessions(sess))
-      .catch(console.error)
+      .catch((err) => {
+        if (err instanceof api.AuthError) {
+          clearAuth();
+          window.location.href = "/login";
+        } else {
+          console.error(err);
+        }
+      })
       .finally(() => setIsLoadingSessions(false));
   }, [userToken]);
 
   const createNewSession = useCallback(async (): Promise<string> => {
     if (!userToken) throw new Error("Not authenticated");
     const newSession = await api.createSession(userToken);
-    setSessions((prev) => [...prev, newSession]);
+    setSessions((prev) => [newSession, ...prev]);
     setCurrentSessionId(newSession.session_id);
     updateSessionToken(newSession.session_id, newSession.token.access_token);
     return newSession.session_id;
@@ -133,9 +140,19 @@ export function RuntimeProvider({ children }: { children: ReactNode }) {
     [API_URL, currentSessionId, currentSessionToken],
   );
 
-  const threadListAdapter = useMemo(
-    () => ({
-      threadId: currentSessionId ?? undefined,
+  const threadListAdapter = useMemo(() => {
+    const threads = sessions.map((s) => ({
+      status: "regular" as const,
+      id: s.session_id,
+      title: s.name || undefined,
+    }));
+    const threadInList =
+      currentSessionId != null &&
+      sessions.some((s) => s.session_id === currentSessionId);
+
+    return {
+      threadId: threadInList ? currentSessionId : undefined,
+      threads,
 
       onSwitchToNewThread: async () => {
         await createNewSession();
@@ -158,9 +175,8 @@ export function RuntimeProvider({ children }: { children: ReactNode }) {
           return { messages: [] as ThreadMessage[] };
         }
       },
-    }),
-    [currentSessionId, createNewSession],
-  );
+    };
+  }, [sessions, currentSessionId, createNewSession]);
 
   const runtime = useAgUiRuntime({
     agent,
