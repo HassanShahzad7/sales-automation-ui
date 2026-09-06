@@ -1,0 +1,69 @@
+- generic [active] [ref=f12e1]:
+  - button "Open Next.js Dev Tools" [ref=f12e7] [cursor=pointer]
+  - alert [ref=f12e11]
+  - generic [ref=f12e12]:
+    - generic [ref=f12e15]:
+      - generic [ref=f12e16]: Sales Assistant
+      - generic [ref=f12e22]:
+        - list [ref=f12e24]:
+          - listitem [ref=f12e25]:
+            - link "Dashboard" [ref=f12e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f12e33]:
+            - link "Chat" [ref=f12e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f12e38]:
+            - link "ICPs" [ref=f12e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f12e45]:
+            - link "Companies" [ref=f12e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f12e52]:
+            - link "Prospects" [ref=f12e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f12e60]:
+            - link "Outreach" [ref=f12e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f12e66]:
+            - link "Inbox" [ref=f12e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f12e72]:
+            - link "Meetings" [ref=f12e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f12e77]:
+            - link "Workflows" [ref=f12e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f12e84]:
+            - link "Integrations" [ref=f12e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f12e91]:
+            - link "Analytics" [ref=f12e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f12e95]:
+            - link "Settings" [ref=f12e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f12e102]:
+          - button "Automation" [expanded] [ref=f12e103]
+          - list [ref=f12e108]:
+            - listitem [ref=f12e109]:
+              - button "Apollo" [ref=f12e110]
+            - listitem [ref=f12e116]:
+              - button "LinkedIn" [ref=f12e117]
+            - listitem [ref=f12e124]:
+              - button "Gmail" [ref=f12e125]
+            - listitem [ref=f12e130]:
+              - button "Calendar" [ref=f12e131]
+      - generic [ref=f12e135]:
+        - combobox [ref=f12e139]:
+          - generic: Actual Workspace
+        - list [ref=f12e140]:
+          - listitem [ref=f12e141]:
+            - button "Sign out" [ref=f12e142]
+    - main [ref=f12e147]:
+      - generic [ref=f12e148]:
+        - button "Toggle Sidebar" [ref=f12e150]
+        - generic [ref=f12e153]:
+          - heading "Outreach" [level=1] [ref=f12e156]
+          - generic [ref=f12e158]:
+            - generic [ref=f12e160]: Coming soon
+            - generic [ref=f12e161]: This section is coming soon. We're still building out outreach.

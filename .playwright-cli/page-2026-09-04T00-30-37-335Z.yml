@@ -1,0 +1,216 @@
+- generic [active] [ref=f11e1]:
+  - button "Open Next.js Dev Tools" [ref=f11e7] [cursor=pointer]
+  - alert [ref=f11e11]
+  - generic [ref=f11e12]:
+    - generic [ref=f11e15]:
+      - generic [ref=f11e16]: Sales Assistant
+      - generic [ref=f11e22]:
+        - list [ref=f11e24]:
+          - listitem [ref=f11e25]:
+            - link "Dashboard" [ref=f11e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f11e33]:
+            - link "Chat" [ref=f11e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f11e38]:
+            - link "ICPs" [ref=f11e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f11e45]:
+            - link "Companies" [ref=f11e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f11e52]:
+            - link "Prospects" [ref=f11e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f11e60]:
+            - link "Outreach" [ref=f11e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f11e66]:
+            - link "Inbox" [ref=f11e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f11e72]:
+            - link "Meetings" [ref=f11e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f11e77]:
+            - link "Workflows" [ref=f11e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f11e84]:
+            - link "Integrations" [ref=f11e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f11e91]:
+            - link "Analytics" [ref=f11e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f11e95]:
+            - link "Settings" [ref=f11e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f11e102]:
+          - button "Automation" [expanded] [ref=f11e103]
+          - list [ref=f11e108]:
+            - listitem [ref=f11e109]:
+              - button "Apollo" [ref=f11e110]
+            - listitem [ref=f11e116]:
+              - button "LinkedIn" [ref=f11e117]
+            - listitem [ref=f11e124]:
+              - button "Gmail" [ref=f11e125]
+            - listitem [ref=f11e130]:
+              - button "Calendar" [ref=f11e131]
+      - generic [ref=f11e135]:
+        - combobox [ref=f11e139]:
+          - generic: Demo Workspace
+        - list [ref=f11e140]:
+          - listitem [ref=f11e141]:
+            - button "Sign out" [ref=f11e142]
+    - main [ref=f11e147]:
+      - generic [ref=f11e148]:
+        - button "Toggle Sidebar" [ref=f11e150]
+        - generic [ref=f11e153]:
+          - generic [ref=f11e155]:
+            - heading "Outbound Command Center" [level=1] [ref=f11e156]
+            - paragraph [ref=f11e157]: A live view of your outbound pipeline, from ICP to booked meeting.
+          - generic [ref=f11e158]:
+            - generic [ref=f11e159]:
+              - generic [ref=f11e160]: Active ICPs
+              - generic [ref=f11e162]: "3"
+            - generic [ref=f11e164]:
+              - generic [ref=f11e165]: Companies Found
+              - generic [ref=f11e167]: "6"
+            - generic [ref=f11e169]:
+              - generic [ref=f11e170]: Prospects Enriched
+              - generic [ref=f11e172]: "6"
+            - generic [ref=f11e174]:
+              - generic [ref=f11e175]: Ready for Outreach
+              - generic [ref=f11e177]: "1"
+            - generic [ref=f11e179]:
+              - generic [ref=f11e180]: Replies Requiring Attention
+              - generic [ref=f11e182]: "3"
+            - generic [ref=f11e184]:
+              - generic [ref=f11e185]: Meetings Booked
+              - generic [ref=f11e187]: "1"
+            - generic [ref=f11e189]:
+              - generic [ref=f11e191]:
+                - text: Drafts Awaiting Review
+                - generic [ref=f11e192]: Demo Data
+              - generic [ref=f11e193]:
+                - generic [ref=f11e194]: "18"
+                - generic [ref=f11e195]: 5 stale
+          - generic [ref=f11e197]:
+            - generic [ref=f11e198]:
+              - generic [ref=f11e199]: Outbound Pipeline
+              - generic [ref=f11e200]: Demo Data
+            - list [ref=f11e202]:
+              - listitem [ref=f11e203]:
+                - generic [ref=f11e204]: Define ICP
+              - listitem [ref=f11e210]:
+                - generic [ref=f11e211]: Find Companies
+              - listitem [ref=f11e217]:
+                - generic [ref=f11e218]: Find Decision Makers
+              - listitem [ref=f11e224]:
+                - generic [ref=f11e225]: Research Prospects
+              - listitem [ref=f11e234]:
+                - generic [ref=f11e235]: Generate Outreach
+              - listitem [ref=f11e241]:
+                - generic [ref=f11e242]: Send / Follow Up
+              - listitem [ref=f11e249]:
+                - generic [ref=f11e250]: Handle Replies
+              - listitem [ref=f11e256]:
+                - generic [ref=f11e257]: Book Meeting
+          - generic [ref=f11e269]:
+            - generic [ref=f11e270]: Quick Actions
+            - generic [ref=f11e272]:
+              - button "Create ICP" [ref=f11e273]
+              - button "Find Companies" [ref=f11e274]
+              - button "Find Decision Makers" [ref=f11e275]
+              - button "Research Prospects" [ref=f11e276]
+              - button "Generate Outreach" [ref=f11e277]
+              - button "Review Replies" [ref=f11e278]
+          - generic [ref=f11e279]:
+            - generic [ref=f11e280]:
+              - generic [ref=f11e281]: Active Campaigns
+              - generic [ref=f11e282]: Demo Data
+            - table [ref=f11e285]:
+              - rowgroup [ref=f11e286]:
+                - row [ref=f11e287]:
+                  - columnheader "Campaign" [ref=f11e288]
+                  - columnheader "Target Market" [ref=f11e289]
+                  - columnheader "Companies" [ref=f11e290]
+                  - columnheader "Prospects" [ref=f11e291]
+                  - columnheader "Outreach" [ref=f11e292]
+                  - columnheader "Replies" [ref=f11e293]
+                  - columnheader "Meetings" [ref=f11e294]
+                  - columnheader "State" [ref=f11e295]
+              - rowgroup [ref=f11e296]:
+                - row [ref=f11e297]:
+                  - cell "Series B SaaS — VP Eng" [ref=f11e298]
+                  - cell "US, 50-500 employees" [ref=f11e299]
+                  - cell "128" [ref=f11e300]
+                  - cell "340" [ref=f11e301]
+                  - cell "Sending" [ref=f11e302]
+                  - cell "14" [ref=f11e304]
+                  - cell "4" [ref=f11e305]
+                  - cell "Active" [ref=f11e306]
+                - row [ref=f11e308]:
+                  - cell "Fintech Compliance Leads" [ref=f11e309]
+                  - cell "EU, 200+ employees" [ref=f11e310]
+                  - cell "96" [ref=f11e311]
+                  - cell "210" [ref=f11e312]
+                  - cell "Drafts pending" [ref=f11e313]
+                  - cell "3" [ref=f11e315]
+                  - cell "1" [ref=f11e316]
+                  - cell "Review needed" [ref=f11e317]
+                - row [ref=f11e319]:
+                  - cell "Healthcare Ops Directors" [ref=f11e320]
+                  - cell "US, 100-1000 employees" [ref=f11e321]
+                  - cell "74" [ref=f11e322]
+                  - cell "158" [ref=f11e323]
+                  - cell "Completed" [ref=f11e324]
+                  - cell "22" [ref=f11e326]
+                  - cell "7" [ref=f11e327]
+                  - cell "Completed" [ref=f11e328]
+          - generic [ref=f11e330]:
+            - generic [ref=f11e331]:
+              - generic [ref=f11e332]:
+                - generic [ref=f11e333]: Recent Activity
+                - generic [ref=f11e334]: Demo Data
+              - generic [ref=f11e335]:
+                - generic [ref=f11e341]:
+                  - paragraph [ref=f11e342]: New reply from Jordan Lee (Acme Corp) — flagged for review
+                  - paragraph [ref=f11e343]: 10 minutes ago
+                - generic [ref=f11e349]:
+                  - paragraph [ref=f11e350]: Sent 24 outreach emails for "Series B SaaS — VP Eng"
+                  - paragraph [ref=f11e351]: 42 minutes ago
+                - generic [ref=f11e356]:
+                  - paragraph [ref=f11e357]: Meeting booked with Priya Nair (NimbusData)
+                  - paragraph [ref=f11e358]: 1 hour ago
+                - generic [ref=f11e364]:
+                  - paragraph [ref=f11e365]: Found 18 new companies matching "Fintech Compliance Leads"
+                  - paragraph [ref=f11e366]: 3 hours ago
+                - generic [ref=f11e374]:
+                  - paragraph [ref=f11e375]: Sent 6 LinkedIn connection requests
+                  - paragraph [ref=f11e376]: 5 hours ago
+                - generic [ref=f11e383]:
+                  - paragraph [ref=f11e384]: Created ICP "Healthcare Ops Directors"
+                  - paragraph [ref=f11e385]: Yesterday
+            - generic [ref=f11e386]:
+              - generic [ref=f11e387]:
+                - generic [ref=f11e388]: Integration Status
+                - generic [ref=f11e389]: Demo Data
+              - generic [ref=f11e390]:
+                - generic [ref=f11e398]:
+                  - generic [ref=f11e399]:
+                    - generic [ref=f11e400]: Apollo
+                    - generic [ref=f11e401]: Connected
+                  - paragraph [ref=f11e402]: Synced 5 minutes ago
+                - generic [ref=f11e411]:
+                  - generic [ref=f11e412]:
+                    - generic [ref=f11e413]: LinkedIn
+                    - generic [ref=f11e414]: Connected
+                  - paragraph [ref=f11e415]: Synced 20 minutes ago
+                - generic [ref=f11e422]:
+                  - generic [ref=f11e423]:
+                    - generic [ref=f11e424]: Gmail
+                    - generic [ref=f11e425]: Connected
+                  - paragraph [ref=f11e426]: Synced 2 minutes ago
+                - generic [ref=f11e432]:
+                  - generic [ref=f11e433]:
+                    - generic [ref=f11e434]: Google Calendar
+                    - generic [ref=f11e435]: Needs Attention
+                  - paragraph [ref=f11e436]: Last synced 2 days ago

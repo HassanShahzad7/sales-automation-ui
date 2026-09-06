@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthenticatedShell } from "@/components/authenticated-shell";
 
 import "./globals.css";
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-dvh">
-      <body className="h-dvh font-sans">{children}</body>
+      <body className="h-dvh font-sans">
+        <AuthenticatedShell>{children}</AuthenticatedShell>
+      </body>
     </html>
   );
 }

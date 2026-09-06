@@ -1,0 +1,206 @@
+- generic [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]
+  - alert [ref=e11]
+  - generic [ref=e28]:
+    - generic [ref=e31]:
+      - generic [ref=e32]: Sales Assistant
+      - generic [ref=e38]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link "Dashboard" [ref=e42] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e49]:
+            - link "Chat" [ref=e50] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=e54]:
+            - link "ICPs" [ref=e55] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=e61]:
+            - link "Companies" [ref=e62] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=e68]:
+            - link "Prospects" [ref=e69] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=e76]:
+            - link "Outreach" [ref=e77] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=e82]:
+            - link "Inbox" [ref=e83] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=e88]:
+            - link "Meetings" [ref=e89] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=e93]:
+            - link "Workflows" [ref=e94] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=e100]:
+            - link "Integrations" [ref=e101] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=e107]:
+            - link "Analytics" [ref=e108] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=e111]:
+            - link "Settings" [ref=e112] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=e118]:
+          - button "Automation" [expanded] [ref=e119]
+          - list [ref=e124]:
+            - listitem [ref=e125]:
+              - button "Apollo" [ref=e126]
+            - listitem [ref=e132]:
+              - button "LinkedIn" [ref=e133]
+            - listitem [ref=e140]:
+              - button "Gmail" [ref=e141]
+            - listitem [ref=e146]:
+              - button "Calendar" [ref=e147]
+      - generic [ref=e151]:
+        - combobox [active] [ref=e155]:
+          - generic: Demo Workspace
+        - list [ref=e156]:
+          - listitem [ref=e157]:
+            - button "Sign out" [ref=e158]
+    - main [ref=e163]:
+      - generic [ref=e164]:
+        - button "Toggle Sidebar" [ref=e166]
+        - generic [ref=e169]:
+          - generic [ref=e171]:
+            - heading "Outbound Command Center" [level=1] [ref=e172]
+            - paragraph [ref=e173]: A live view of your outbound pipeline, from ICP to booked meeting.
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - generic [ref=e176]: Active ICPs
+              - generic [ref=e178]: "3"
+            - generic [ref=e180]:
+              - generic [ref=e181]: Companies Found
+              - generic [ref=e183]: "6"
+            - generic [ref=e185]:
+              - generic [ref=e186]: Prospects Enriched
+              - generic [ref=e188]: "6"
+            - generic [ref=e190]:
+              - generic [ref=e191]: Ready for Outreach
+              - generic [ref=e193]: "1"
+            - generic [ref=e195]:
+              - generic [ref=e196]: Replies Requiring Attention
+              - generic [ref=e198]: "3"
+            - generic [ref=e200]:
+              - generic [ref=e201]: Meetings Booked
+              - generic [ref=e203]: "1"
+            - generic [ref=e260]:
+              - generic [ref=e261]: Drafts Awaiting Review
+              - generic [ref=e263]:
+                - generic [ref=e264]: "18"
+                - generic [ref=e265]: 5 stale
+          - generic [ref=e205]:
+            - generic [ref=e206]: Outbound Pipeline
+            - list [ref=e267]:
+              - listitem [ref=e268]:
+                - generic [ref=e269]: Define ICP
+              - listitem [ref=e275]:
+                - generic [ref=e276]: Find Companies
+              - listitem [ref=e282]:
+                - generic [ref=e283]: Find Decision Makers
+              - listitem [ref=e289]:
+                - generic [ref=e290]: Research Prospects
+              - listitem [ref=e303]:
+                - generic [ref=e304]: Generate Outreach
+              - listitem [ref=e310]:
+                - generic [ref=e311]: Send / Follow Up
+              - listitem [ref=e318]:
+                - generic [ref=e319]: Handle Replies
+              - listitem [ref=e325]:
+                - generic [ref=e326]: Book Meeting
+          - generic [ref=e214]:
+            - generic [ref=e215]: Quick Actions
+            - generic [ref=e217]:
+              - button "Create ICP" [ref=e218]
+              - button "Find Companies" [ref=e219]
+              - button "Find Decision Makers" [ref=e220]
+              - button "Research Prospects" [ref=e221]
+              - button "Generate Outreach" [ref=e222]
+              - button "Review Replies" [ref=e223]
+          - generic [ref=e224]:
+            - generic [ref=e225]: Active Campaigns
+            - table [ref=e339]:
+              - rowgroup [ref=e340]:
+                - row [ref=e341]:
+                  - columnheader "Campaign" [ref=e342]
+                  - columnheader "Target Market" [ref=e343]
+                  - columnheader "Companies" [ref=e344]
+                  - columnheader "Prospects" [ref=e345]
+                  - columnheader "Outreach" [ref=e346]
+                  - columnheader "Replies" [ref=e347]
+                  - columnheader "Meetings" [ref=e348]
+                  - columnheader "State" [ref=e349]
+              - rowgroup [ref=e350]:
+                - row [ref=e351]:
+                  - cell "Series B SaaS — VP Eng" [ref=e352]
+                  - cell "US, 50-500 employees" [ref=e353]
+                  - cell "128" [ref=e354]
+                  - cell "340" [ref=e355]
+                  - cell "Sending" [ref=e356]
+                  - cell "14" [ref=e358]
+                  - cell "4" [ref=e359]
+                  - cell "Active" [ref=e360]
+                - row [ref=e362]:
+                  - cell "Fintech Compliance Leads" [ref=e363]
+                  - cell "EU, 200+ employees" [ref=e364]
+                  - cell "96" [ref=e365]
+                  - cell "210" [ref=e366]
+                  - cell "Drafts pending" [ref=e367]
+                  - cell "3" [ref=e369]
+                  - cell "1" [ref=e370]
+                  - cell "Review needed" [ref=e371]
+                - row [ref=e373]:
+                  - cell "Healthcare Ops Directors" [ref=e374]
+                  - cell "US, 100-1000 employees" [ref=e375]
+                  - cell "74" [ref=e376]
+                  - cell "158" [ref=e377]
+                  - cell "Completed" [ref=e378]
+                  - cell "22" [ref=e380]
+                  - cell "7" [ref=e381]
+                  - cell "Completed" [ref=e382]
+          - generic [ref=e233]:
+            - generic [ref=e234]:
+              - generic [ref=e235]: Recent Activity
+              - generic [ref=e237]:
+                - generic [ref=e389]:
+                  - paragraph [ref=e390]: New reply from Jordan Lee (Acme Corp) — flagged for review
+                  - paragraph [ref=e391]: 10 minutes ago
+                - generic [ref=e397]:
+                  - paragraph [ref=e398]: Sent 24 outreach emails for "Series B SaaS — VP Eng"
+                  - paragraph [ref=e399]: 42 minutes ago
+                - generic [ref=e404]:
+                  - paragraph [ref=e405]: Meeting booked with Priya Nair (NimbusData)
+                  - paragraph [ref=e406]: 1 hour ago
+                - generic [ref=e412]:
+                  - paragraph [ref=e413]: Found 18 new companies matching "Fintech Compliance Leads"
+                  - paragraph [ref=e414]: 3 hours ago
+                - generic [ref=e422]:
+                  - paragraph [ref=e423]: Sent 6 LinkedIn connection requests
+                  - paragraph [ref=e424]: 5 hours ago
+                - generic [ref=e431]:
+                  - paragraph [ref=e432]: Created ICP "Healthcare Ops Directors"
+                  - paragraph [ref=e433]: Yesterday
+            - generic [ref=e243]:
+              - generic [ref=e244]: Integration Status
+              - generic [ref=e246]:
+                - generic [ref=e441]:
+                  - generic [ref=e442]:
+                    - generic [ref=e443]: Apollo
+                    - generic [ref=e444]: Connected
+                  - paragraph [ref=e445]: Synced 5 minutes ago
+                - generic [ref=e454]:
+                  - generic [ref=e455]:
+                    - generic [ref=e456]: LinkedIn
+                    - generic [ref=e457]: Connected
+                  - paragraph [ref=e458]: Synced 20 minutes ago
+                - generic [ref=e465]:
+                  - generic [ref=e466]:
+                    - generic [ref=e467]: Gmail
+                    - generic [ref=e468]: Connected
+                  - paragraph [ref=e469]: Synced 2 minutes ago
+                - generic [ref=e475]:
+                  - generic [ref=e476]:
+                    - generic [ref=e477]: Google Calendar
+                    - generic [ref=e478]: Connected
+                  - paragraph [ref=e479]: Synced 10 minutes ago

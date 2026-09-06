@@ -1,0 +1,129 @@
+- generic [active] [ref=f3e1]:
+  - button "Open Next.js Dev Tools" [ref=f3e7] [cursor=pointer]
+  - alert [ref=f3e11]
+  - generic [ref=f3e12]:
+    - generic [ref=f3e15]:
+      - generic [ref=f3e16]: Sales Assistant
+      - generic [ref=f3e22]:
+        - list [ref=f3e24]:
+          - listitem [ref=f3e25]:
+            - link "Dashboard" [ref=f3e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f3e33]:
+            - link "Chat" [ref=f3e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f3e38]:
+            - link "ICPs" [ref=f3e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f3e45]:
+            - link "Companies" [ref=f3e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f3e52]:
+            - link "Prospects" [ref=f3e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f3e60]:
+            - link "Outreach" [ref=f3e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f3e66]:
+            - link "Inbox" [ref=f3e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f3e72]:
+            - link "Meetings" [ref=f3e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f3e77]:
+            - link "Workflows" [ref=f3e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f3e84]:
+            - link "Integrations" [ref=f3e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f3e91]:
+            - link "Analytics" [ref=f3e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f3e95]:
+            - link "Settings" [ref=f3e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f3e102]:
+          - button "Automation" [expanded] [ref=f3e103]
+          - list [ref=f3e108]:
+            - listitem [ref=f3e109]:
+              - button "Apollo" [ref=f3e110]
+            - listitem [ref=f3e116]:
+              - button "LinkedIn" [ref=f3e117]
+            - listitem [ref=f3e124]:
+              - button "Gmail" [ref=f3e125]
+            - listitem [ref=f3e130]:
+              - button "Calendar" [ref=f3e131]
+      - generic [ref=f3e135]:
+        - combobox [ref=f3e139]:
+          - generic: Demo Workspace
+        - list [ref=f3e140]:
+          - listitem [ref=f3e141]:
+            - button "Sign out" [ref=f3e142]
+    - main [ref=f3e147]:
+      - generic [ref=f3e148]:
+        - button "Toggle Sidebar" [ref=f3e150]
+        - generic [ref=f3e153]:
+          - generic [ref=f3e154]:
+            - generic [ref=f3e155]:
+              - heading "Outreach" [level=1] [ref=f3e156]
+              - paragraph [ref=f3e157]: Email and LinkedIn messages sent to prospects.
+            - generic [ref=f3e158]: Demo Data
+          - table [ref=f3e161]:
+            - rowgroup [ref=f3e162]:
+              - row [ref=f3e163]:
+                - columnheader "Prospect" [ref=f3e164]
+                - columnheader "Company" [ref=f3e165]
+                - columnheader "Channel" [ref=f3e166]
+                - columnheader "Subject" [ref=f3e167]
+                - columnheader "Status" [ref=f3e168]
+                - columnheader "Sent" [ref=f3e169]
+            - rowgroup [ref=f3e170]:
+              - row [ref=f3e171]:
+                - cell "Priya Nair" [ref=f3e172]
+                - cell "NimbusData" [ref=f3e173]
+                - cell "email" [ref=f3e174]
+                - cell "Quick question about scaling your platform team" [ref=f3e175]
+                - cell "Replied" [ref=f3e176]
+                - cell "8/26/2026" [ref=f3e178]
+              - row [ref=f3e179]:
+                - cell "Priya Nair" [ref=f3e180]
+                - cell "NimbusData" [ref=f3e181]
+                - cell "linkedin" [ref=f3e182]
+                - cell "Connection request + intro note" [ref=f3e183]
+                - cell "Replied" [ref=f3e184]
+                - cell "8/25/2026" [ref=f3e186]
+              - row [ref=f3e187]:
+                - cell "Jordan Lee" [ref=f3e188]
+                - cell "Acme Corp" [ref=f3e189]
+                - cell "email" [ref=f3e190]
+                - cell "Helping Acme Corp scale engineering headcount" [ref=f3e191]
+                - cell "Replied" [ref=f3e192]
+                - cell "8/29/2026" [ref=f3e194]
+              - row [ref=f3e195]:
+                - cell "Sam Osei" [ref=f3e196]
+                - cell "Kestrel Fintech" [ref=f3e197]
+                - cell "email" [ref=f3e198]
+                - cell "Streamlining compliance workflows at Kestrel" [ref=f3e199]
+                - cell "Replied" [ref=f3e200]
+                - cell "8/25/2026" [ref=f3e202]
+              - row [ref=f3e203]:
+                - cell "Aisha Rahman" [ref=f3e204]
+                - cell "Ledger Trust" [ref=f3e205]
+                - cell "email" [ref=f3e206]
+                - cell "A faster way to close your books" [ref=f3e207]
+                - cell "Replied" [ref=f3e208]
+                - cell "9/2/2026" [ref=f3e210]
+              - row [ref=f3e211]:
+                - cell "Elena Petrov" [ref=f3e212]
+                - cell "Bright Health Ops" [ref=f3e213]
+                - cell "email" [ref=f3e214]
+                - cell "Cutting ops overhead for healthcare teams" [ref=f3e215]
+                - cell "Sent" [ref=f3e216]
+                - cell "9/3/2026" [ref=f3e218]
+              - row [ref=f3e219]:
+                - cell "Marcus Chen" [ref=f3e220]
+                - cell "Vantage Cloud" [ref=f3e221]
+                - cell "email" [ref=f3e222]
+                - 'cell "Intro: helping Vantage Cloud''s platform team move faster" [ref=f3e223]'
+                - cell "Scheduled" [ref=f3e224]
+                - cell "9/5/2026" [ref=f3e226]

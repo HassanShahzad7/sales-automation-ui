@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]
+  - alert [ref=e11]
+  - generic [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]: Sales Assistant
+      - generic [ref=e42]:
+        - list [ref=e44]:
+          - listitem [ref=e45]:
+            - link "Dashboard" [ref=e46] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e53]:
+            - link "Chat" [ref=e54] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=e58]:
+            - link "ICPs" [ref=e59] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=e65]:
+            - link "Companies" [ref=e66] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=e72]:
+            - link "Prospects" [ref=e73] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=e80]:
+            - link "Outreach" [ref=e81] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=e86]:
+            - link "Inbox" [ref=e87] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=e92]:
+            - link "Meetings" [ref=e93] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=e97]:
+            - link "Workflows" [ref=e98] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=e104]:
+            - link "Integrations" [ref=e105] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=e111]:
+            - link "Analytics" [ref=e112] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=e115]:
+            - link "Settings" [ref=e116] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=e122]:
+          - button "Automation" [expanded] [ref=e123]
+          - list [ref=e128]:
+            - listitem [ref=e129]:
+              - button "Apollo" [ref=e130]
+            - listitem [ref=e136]:
+              - button "LinkedIn" [ref=e137]
+            - listitem [ref=e144]:
+              - button "Gmail" [ref=e145]
+            - listitem [ref=e150]:
+              - button "Calendar" [ref=e151]
+      - generic [ref=e155]:
+        - combobox [ref=e159]:
+          - generic: Actual Workspace
+        - list [ref=e160]:
+          - listitem [ref=e161]:
+            - button "Sign out" [ref=e162]
+    - main [ref=e167]:
+      - generic [ref=e168]:
+        - button "Toggle Sidebar" [ref=e170]
+        - generic [ref=e173]:
+          - generic [ref=e175]:
+            - heading "Outbound Command Center" [level=1] [ref=e176]
+            - paragraph [ref=e177]: A live view of your outbound pipeline, from ICP to booked meeting.
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - generic [ref=e180]: Active ICPs
+              - generic [ref=e182]: "3"
+            - generic [ref=e184]:
+              - generic [ref=e185]: Companies Found
+              - generic [ref=e187]: "379"
+            - generic [ref=e189]:
+              - generic [ref=e190]: Prospects Enriched
+              - generic [ref=e192]: "1189"
+            - generic [ref=e194]:
+              - generic [ref=e195]: Ready for Outreach
+              - generic [ref=e197]: "101"
+            - generic [ref=e199]:
+              - generic [ref=e200]: Replies Requiring Attention
+              - generic [ref=e202]: "0"
+            - generic [ref=e204]:
+              - generic [ref=e205]: Meetings Booked
+              - generic [ref=e207]: "0"
+          - generic [ref=e209]:
+            - generic [ref=e210]: Outbound Pipeline
+            - generic [ref=e214]:
+              - generic [ref=e216]: No pipeline activity yet
+              - generic [ref=e217]: Pipeline stages will appear here once you start finding companies and prospects.
+          - generic [ref=e218]:
+            - generic [ref=e219]: Quick Actions
+            - generic [ref=e221]:
+              - button "Create ICP" [ref=e222]
+              - button "Find Companies" [ref=e223]
+              - button "Find Decision Makers" [ref=e224]
+              - button "Research Prospects" [ref=e225]
+              - button "Generate Outreach" [ref=e226]
+              - button "Review Replies" [ref=e227]
+          - generic [ref=e228]:
+            - generic [ref=e229]: Active Campaigns
+            - generic [ref=e233]:
+              - generic [ref=e235]: No campaigns yet
+              - generic [ref=e236]: Campaign tracking isn't available yet for real workspace data.
+          - generic [ref=e237]:
+            - generic [ref=e238]:
+              - generic [ref=e239]: Recent Activity
+              - generic [ref=e243]:
+                - generic [ref=e245]: No activity yet
+                - generic [ref=e246]: An activity log isn't available yet for real workspace data.
+            - generic [ref=e247]:
+              - generic [ref=e248]: Integration Status
+              - generic [ref=e252]:
+                - generic [ref=e254]: Integration status unavailable
+                - generic [ref=e255]: Health checks for connected integrations aren't available yet for real workspace data.

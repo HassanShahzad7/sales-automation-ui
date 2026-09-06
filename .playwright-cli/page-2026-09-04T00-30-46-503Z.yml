@@ -1,0 +1,69 @@
+- generic [active] [ref=f14e1]:
+  - button "Open Next.js Dev Tools" [ref=f14e7] [cursor=pointer]
+  - alert [ref=f14e11]
+  - generic [ref=f14e12]:
+    - generic [ref=f14e15]:
+      - generic [ref=f14e16]: Sales Assistant
+      - generic [ref=f14e22]:
+        - list [ref=f14e24]:
+          - listitem [ref=f14e25]:
+            - link "Dashboard" [ref=f14e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f14e33]:
+            - link "Chat" [ref=f14e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f14e38]:
+            - link "ICPs" [ref=f14e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f14e45]:
+            - link "Companies" [ref=f14e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f14e52]:
+            - link "Prospects" [ref=f14e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f14e60]:
+            - link "Outreach" [ref=f14e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f14e66]:
+            - link "Inbox" [ref=f14e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f14e72]:
+            - link "Meetings" [ref=f14e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f14e77]:
+            - link "Workflows" [ref=f14e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f14e84]:
+            - link "Integrations" [ref=f14e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f14e91]:
+            - link "Analytics" [ref=f14e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f14e95]:
+            - link "Settings" [ref=f14e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f14e102]:
+          - button "Automation" [expanded] [ref=f14e103]
+          - list [ref=f14e108]:
+            - listitem [ref=f14e109]:
+              - button "Apollo" [ref=f14e110]
+            - listitem [ref=f14e116]:
+              - button "LinkedIn" [ref=f14e117]
+            - listitem [ref=f14e124]:
+              - button "Gmail" [ref=f14e125]
+            - listitem [ref=f14e130]:
+              - button "Calendar" [ref=f14e131]
+      - generic [ref=f14e135]:
+        - combobox [ref=f14e139]:
+          - generic: Actual Workspace
+        - list [ref=f14e140]:
+          - listitem [ref=f14e141]:
+            - button "Sign out" [ref=f14e142]
+    - main [ref=f14e147]:
+      - generic [ref=f14e148]:
+        - button "Toggle Sidebar" [ref=f14e150]
+        - generic [ref=f14e153]:
+          - heading "Meetings" [level=1] [ref=f14e156]
+          - generic [ref=f14e158]:
+            - generic [ref=f14e160]: Coming soon
+            - generic [ref=f14e161]: This section is coming soon. We're still building out meetings.

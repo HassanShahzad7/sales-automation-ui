@@ -1,0 +1,103 @@
+- generic [active] [ref=f4e1]:
+  - button "Open Next.js Dev Tools" [ref=f4e7] [cursor=pointer]
+  - alert [ref=f4e11]
+  - generic [ref=f4e12]:
+    - generic [ref=f4e15]:
+      - generic [ref=f4e16]: Sales Assistant
+      - generic [ref=f4e22]:
+        - list [ref=f4e24]:
+          - listitem [ref=f4e25]:
+            - link "Dashboard" [ref=f4e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f4e33]:
+            - link "Chat" [ref=f4e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f4e38]:
+            - link "ICPs" [ref=f4e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f4e45]:
+            - link "Companies" [ref=f4e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f4e52]:
+            - link "Prospects" [ref=f4e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f4e60]:
+            - link "Outreach" [ref=f4e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f4e66]:
+            - link "Inbox" [ref=f4e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f4e72]:
+            - link "Meetings" [ref=f4e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f4e77]:
+            - link "Workflows" [ref=f4e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f4e84]:
+            - link "Integrations" [ref=f4e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f4e91]:
+            - link "Analytics" [ref=f4e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f4e95]:
+            - link "Settings" [ref=f4e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f4e102]:
+          - button "Automation" [expanded] [ref=f4e103]
+          - list [ref=f4e108]:
+            - listitem [ref=f4e109]:
+              - button "Apollo" [ref=f4e110]
+            - listitem [ref=f4e116]:
+              - button "LinkedIn" [ref=f4e117]
+            - listitem [ref=f4e124]:
+              - button "Gmail" [ref=f4e125]
+            - listitem [ref=f4e130]:
+              - button "Calendar" [ref=f4e131]
+      - generic [ref=f4e135]:
+        - combobox [ref=f4e139]:
+          - generic: Demo Workspace
+        - list [ref=f4e140]:
+          - listitem [ref=f4e141]:
+            - button "Sign out" [ref=f4e142]
+    - main [ref=f4e147]:
+      - generic [ref=f4e148]:
+        - button "Toggle Sidebar" [ref=f4e150]
+        - generic [ref=f4e153]:
+          - generic [ref=f4e154]:
+            - generic [ref=f4e155]:
+              - heading "Inbox" [level=1] [ref=f4e156]
+              - paragraph [ref=f4e157]: Replies from prospects, flagged for review.
+            - generic [ref=f4e158]: Demo Data
+          - table [ref=f4e161]:
+            - rowgroup [ref=f4e162]:
+              - row [ref=f4e163]:
+                - columnheader "Prospect" [ref=f4e164]
+                - columnheader "Company" [ref=f4e165]
+                - columnheader "Message" [ref=f4e166]
+                - columnheader "Sentiment" [ref=f4e167]
+                - columnheader "Received" [ref=f4e168]
+            - rowgroup [ref=f4e169]:
+              - row [ref=f4e170]:
+                - cell "Priya Nair" [ref=f4e171]
+                - cell "NimbusData" [ref=f4e172]
+                - cell "Sounds interesting — let's grab time Thursday." [ref=f4e173]
+                - cell "Interested" [ref=f4e174]
+                - cell "8/27/2026" [ref=f4e176]
+              - row [ref=f4e177]:
+                - cell "Jordan Lee" [ref=f4e178]
+                - cell "Acme Corp" [ref=f4e179]
+                - cell "Can you send over pricing details before we talk further?" [ref=f4e180]
+                - cell "Question" [ref=f4e181]
+                - cell "9/1/2026" [ref=f4e183]
+              - row [ref=f4e184]:
+                - cell "Aisha Rahman" [ref=f4e185]
+                - cell "Ledger Trust" [ref=f4e186]
+                - cell "This looks promising, happy to set up a call next week." [ref=f4e187]
+                - cell "Interested" [ref=f4e188]
+                - cell "9/2/2026" [ref=f4e190]
+              - row [ref=f4e191]:
+                - cell "Sam Osei" [ref=f4e192]
+                - cell "Kestrel Fintech" [ref=f4e193]
+                - cell "Not a priority for us right now, but thanks for reaching out." [ref=f4e194]
+                - cell "Not Interested" [ref=f4e195]
+                - cell "8/25/2026" [ref=f4e197]

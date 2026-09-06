@@ -1,0 +1,271 @@
+- generic:
+  - button "Open Next.js Dev Tools" [ref=f11e7] [cursor=pointer]
+  - alert
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic: Sales Assistant
+          - generic:
+            - generic:
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /
+                    - generic: Dashboard
+                - listitem:
+                  - link:
+                    - /url: /chat
+                    - generic: Chat
+                - listitem:
+                  - link:
+                    - /url: /icps
+                    - generic: ICPs
+                - listitem:
+                  - link:
+                    - /url: /companies
+                    - generic: Companies
+                - listitem:
+                  - link:
+                    - /url: /prospects
+                    - generic: Prospects
+                - listitem:
+                  - link:
+                    - /url: /outreach
+                    - generic: Outreach
+                - listitem:
+                  - link:
+                    - /url: /inbox
+                    - generic: Inbox
+                - listitem:
+                  - link:
+                    - /url: /meetings
+                    - generic: Meetings
+                - listitem:
+                  - link:
+                    - /url: /workflows
+                    - generic: Workflows
+                - listitem:
+                  - link:
+                    - /url: /integrations
+                    - generic: Integrations
+                - listitem:
+                  - link:
+                    - /url: /analytics
+                    - generic: Analytics
+                - listitem:
+                  - link:
+                    - /url: /settings
+                    - generic: Settings
+            - generic:
+              - generic:
+                - button [expanded]: Automation
+                - generic:
+                  - generic:
+                    - list:
+                      - listitem:
+                        - button:
+                          - generic: Apollo
+                      - listitem:
+                        - button:
+                          - generic: LinkedIn
+                      - listitem:
+                        - button:
+                          - generic: Gmail
+                      - listitem:
+                        - button:
+                          - generic: Calendar
+          - generic:
+            - generic:
+              - combobox [expanded]:
+                - generic: Demo Workspace
+            - list:
+              - listitem:
+                - button:
+                  - generic: Sign out
+    - main:
+      - generic:
+        - generic:
+          - button:
+            - generic: Toggle Sidebar
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=1]: Outbound Command Center
+                - paragraph: A live view of your outbound pipeline, from ICP to booked meeting.
+            - generic:
+              - generic:
+                - generic: Active ICPs
+                - generic: "3"
+              - generic:
+                - generic: Companies Found
+                - generic: "6"
+              - generic:
+                - generic: Prospects Enriched
+                - generic: "6"
+              - generic:
+                - generic: Ready for Outreach
+                - generic: "1"
+              - generic:
+                - generic: Replies Requiring Attention
+                - generic: "3"
+              - generic:
+                - generic: Meetings Booked
+                - generic: "1"
+              - generic:
+                - generic:
+                  - generic:
+                    - text: Drafts Awaiting Review
+                    - generic: Demo Data
+                - generic:
+                  - generic: "18"
+                  - generic: 5 stale
+            - generic:
+              - generic:
+                - generic: Outbound Pipeline
+                - generic: Demo Data
+              - generic:
+                - list:
+                  - listitem:
+                    - generic: Define ICP
+                  - listitem:
+                    - generic: Find Companies
+                  - listitem:
+                    - generic: Find Decision Makers
+                  - listitem:
+                    - generic: Research Prospects
+                  - listitem:
+                    - generic: Generate Outreach
+                  - listitem:
+                    - generic: Send / Follow Up
+                  - listitem:
+                    - generic: Handle Replies
+                  - listitem:
+                    - generic: Book Meeting
+            - generic:
+              - generic: Quick Actions
+              - generic:
+                - button: Create ICP
+                - button: Find Companies
+                - button: Find Decision Makers
+                - button: Research Prospects
+                - button: Generate Outreach
+                - button: Review Replies
+            - generic:
+              - generic:
+                - generic: Active Campaigns
+                - generic: Demo Data
+              - generic:
+                - generic:
+                  - table:
+                    - rowgroup:
+                      - row:
+                        - columnheader: Campaign
+                        - columnheader: Target Market
+                        - columnheader: Companies
+                        - columnheader: Prospects
+                        - columnheader: Outreach
+                        - columnheader: Replies
+                        - columnheader: Meetings
+                        - columnheader: State
+                    - rowgroup:
+                      - row:
+                        - cell: Series B SaaS — VP Eng
+                        - cell: US, 50-500 employees
+                        - cell: "128"
+                        - cell: "340"
+                        - cell:
+                          - generic: Sending
+                        - cell: "14"
+                        - cell: "4"
+                        - cell:
+                          - generic: Active
+                      - row:
+                        - cell: Fintech Compliance Leads
+                        - cell: EU, 200+ employees
+                        - cell: "96"
+                        - cell: "210"
+                        - cell:
+                          - generic: Drafts pending
+                        - cell: "3"
+                        - cell: "1"
+                        - cell:
+                          - generic: Review needed
+                      - row:
+                        - cell: Healthcare Ops Directors
+                        - cell: US, 100-1000 employees
+                        - cell: "74"
+                        - cell: "158"
+                        - cell:
+                          - generic: Completed
+                        - cell: "22"
+                        - cell: "7"
+                        - cell:
+                          - generic: Completed
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Recent Activity
+                  - generic: Demo Data
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: New reply from Jordan Lee (Acme Corp) — flagged for review
+                      - paragraph: 10 minutes ago
+                  - generic:
+                    - generic:
+                      - paragraph: Sent 24 outreach emails for "Series B SaaS — VP Eng"
+                      - paragraph: 42 minutes ago
+                  - generic:
+                    - generic:
+                      - paragraph: Meeting booked with Priya Nair (NimbusData)
+                      - paragraph: 1 hour ago
+                  - generic:
+                    - generic:
+                      - paragraph: Found 18 new companies matching "Fintech Compliance Leads"
+                      - paragraph: 3 hours ago
+                  - generic:
+                    - generic:
+                      - paragraph: Sent 6 LinkedIn connection requests
+                      - paragraph: 5 hours ago
+                  - generic:
+                    - generic:
+                      - paragraph: Created ICP "Healthcare Ops Directors"
+                      - paragraph: Yesterday
+              - generic:
+                - generic:
+                  - generic: Integration Status
+                  - generic: Demo Data
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Apollo
+                          - generic: Connected
+                        - paragraph: Synced 5 minutes ago
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: LinkedIn
+                          - generic: Connected
+                        - paragraph: Synced 20 minutes ago
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Gmail
+                          - generic: Connected
+                        - paragraph: Synced 2 minutes ago
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Google Calendar
+                          - generic: Needs Attention
+                        - paragraph: Last synced 2 days ago
+  - listbox [ref=f11e437]:
+    - option "Actual Workspace" [ref=f11e438]
+    - option "Demo Workspace" [active] [selected] [ref=f11e441]

@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { DashboardPage } from "@/components/dashboard-page";
+import { CableIcon } from "lucide-react";
+import { ComingSoonPage } from "@/components/shared/coming-soon-page";
 import { getAuth } from "@/lib/auth";
 
-export default function HomePage() {
+export default function IntegrationsRoute() {
   const router = useRouter();
   const [isReady, setIsReady] = useState(false);
 
@@ -20,5 +21,5 @@ export default function HomePage() {
 
   if (!isReady) return null;
 
-  return <DashboardPage />;
+  return <ComingSoonPage icon={CableIcon} title="Integrations" />;
 }

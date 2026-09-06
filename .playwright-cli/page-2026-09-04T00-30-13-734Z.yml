@@ -1,0 +1,141 @@
+- generic [active] [ref=f1e1]:
+  - button "Open Next.js Dev Tools" [ref=f1e7] [cursor=pointer]
+  - alert [ref=f1e11]
+  - generic [ref=f1e12]:
+    - generic [ref=f1e15]:
+      - generic [ref=f1e16]: Sales Assistant
+      - generic [ref=f1e22]:
+        - list [ref=f1e24]:
+          - listitem [ref=f1e25]:
+            - link "Dashboard" [ref=f1e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e33]:
+            - link "Chat" [ref=f1e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f1e38]:
+            - link "ICPs" [ref=f1e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f1e45]:
+            - link "Companies" [ref=f1e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f1e52]:
+            - link "Prospects" [ref=f1e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f1e60]:
+            - link "Outreach" [ref=f1e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f1e66]:
+            - link "Inbox" [ref=f1e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f1e72]:
+            - link "Meetings" [ref=f1e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f1e77]:
+            - link "Workflows" [ref=f1e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f1e84]:
+            - link "Integrations" [ref=f1e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f1e91]:
+            - link "Analytics" [ref=f1e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f1e95]:
+            - link "Settings" [ref=f1e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f1e102]:
+          - button "Automation" [expanded] [ref=f1e103]
+          - list [ref=f1e108]:
+            - listitem [ref=f1e109]:
+              - button "Apollo" [ref=f1e110]
+            - listitem [ref=f1e116]:
+              - button "LinkedIn" [ref=f1e117]
+            - listitem [ref=f1e124]:
+              - button "Gmail" [ref=f1e125]
+            - listitem [ref=f1e130]:
+              - button "Calendar" [ref=f1e131]
+      - generic [ref=f1e135]:
+        - combobox [ref=f1e139]:
+          - generic: Demo Workspace
+        - list [ref=f1e140]:
+          - listitem [ref=f1e141]:
+            - button "Sign out" [ref=f1e142]
+    - main [ref=f1e147]:
+      - generic [ref=f1e148]:
+        - button "Toggle Sidebar" [ref=f1e150]
+        - generic [ref=f1e153]:
+          - generic [ref=f1e155]:
+            - heading "Companies" [level=1] [ref=f1e156]
+            - paragraph [ref=f1e157]: Companies matched against your ICPs and enriched via Apollo.
+          - combobox [ref=f1e159]:
+            - generic: All ICPs
+          - table [ref=f1e161]:
+            - rowgroup [ref=f1e162]:
+              - row [ref=f1e163]:
+                - columnheader "Company" [ref=f1e164]
+                - columnheader "Domain" [ref=f1e165]
+                - columnheader "Employees" [ref=f1e166]
+                - columnheader "Revenue" [ref=f1e167]
+                - columnheader "Founded" [ref=f1e168]
+                - columnheader "ICP(s)" [ref=f1e169]
+                - columnheader "Prospects Found" [ref=f1e170]
+            - rowgroup [ref=f1e171]:
+              - row [ref=f1e172]:
+                - cell "NimbusData" [ref=f1e173]
+                - cell [ref=f1e174]:
+                  - link "nimbusdata-demo.io" [ref=f1e175] [cursor=pointer]:
+                    - /url: https://nimbusdata-demo.io
+                - cell "50-200" [ref=f1e180]
+                - cell "$10M-$50M" [ref=f1e181]
+                - cell "2018" [ref=f1e182]
+                - cell "Series B SaaS — VP Eng" [ref=f1e183]
+                - cell "2" [ref=f1e184]
+              - row [ref=f1e185]:
+                - cell "Acme Corp" [ref=f1e186]
+                - cell [ref=f1e187]:
+                  - link "acme-corp-demo.com" [ref=f1e188] [cursor=pointer]:
+                    - /url: https://acme-corp-demo.com
+                - cell "200-500" [ref=f1e193]
+                - cell "$50M-$100M" [ref=f1e194]
+                - cell "2015" [ref=f1e195]
+                - cell "Series B SaaS — VP Eng" [ref=f1e196]
+                - cell "1" [ref=f1e197]
+              - row [ref=f1e198]:
+                - cell "Vantage Cloud" [ref=f1e199]
+                - cell [ref=f1e200]:
+                  - link "vantagecloud-demo.io" [ref=f1e201] [cursor=pointer]:
+                    - /url: https://vantagecloud-demo.io
+                - cell "50-200" [ref=f1e206]
+                - cell "$10M-$50M" [ref=f1e207]
+                - cell "2019" [ref=f1e208]
+                - cell "Series B SaaS — VP Eng" [ref=f1e209]
+                - cell "1" [ref=f1e210]
+              - row [ref=f1e211]:
+                - cell "Kestrel Fintech" [ref=f1e212]
+                - cell [ref=f1e213]:
+                  - link "kestrelfintech-demo.com" [ref=f1e214] [cursor=pointer]:
+                    - /url: https://kestrelfintech-demo.com
+                - cell "200-1000" [ref=f1e219]
+                - cell "$100M-$500M" [ref=f1e220]
+                - cell "2012" [ref=f1e221]
+                - cell "Fintech Compliance Leads" [ref=f1e222]
+                - cell "1" [ref=f1e223]
+              - row [ref=f1e224]:
+                - cell "Ledger Trust" [ref=f1e225]
+                - cell [ref=f1e226]:
+                  - link "ledgertrust-demo.io" [ref=f1e227] [cursor=pointer]:
+                    - /url: https://ledgertrust-demo.io
+                - cell "200-1000" [ref=f1e232]
+                - cell "$100M-$500M" [ref=f1e233]
+                - cell "2010" [ref=f1e234]
+                - cell "Fintech Compliance Leads" [ref=f1e235]
+                - cell "1" [ref=f1e236]
+              - row [ref=f1e237]:
+                - cell "Bright Health Ops" [ref=f1e238]
+                - cell [ref=f1e239]:
+                  - link "brighthealthops-demo.com" [ref=f1e240] [cursor=pointer]:
+                    - /url: https://brighthealthops-demo.com
+                - cell "100-1000" [ref=f1e245]
+                - cell "$50M-$100M" [ref=f1e246]
+                - cell "2016" [ref=f1e247]
+                - cell "Healthcare Ops Directors" [ref=f1e248]
+                - cell "1" [ref=f1e249]

@@ -25,6 +25,7 @@ type SalesRuntimeContextType = {
   userToken: string | null;
   sessions: Session[];
   currentSessionId: string | null;
+  currentSessionToken: string | null;
   isLoadingSessions: boolean;
   createNewSession: () => Promise<string>;
   removeSession: (sessionId: string, sessionToken: string) => Promise<void>;
@@ -192,6 +193,7 @@ export function RuntimeProvider({ children }: { children: ReactNode }) {
       userToken,
       sessions,
       currentSessionId,
+      currentSessionToken,
       isLoadingSessions,
       createNewSession,
       removeSession,
@@ -201,6 +203,7 @@ export function RuntimeProvider({ children }: { children: ReactNode }) {
       userToken,
       sessions,
       currentSessionId,
+      currentSessionToken,
       isLoadingSessions,
       createNewSession,
       removeSession,

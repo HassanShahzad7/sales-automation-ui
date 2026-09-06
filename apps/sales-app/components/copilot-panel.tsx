@@ -1,30 +1,28 @@
 "use client";
 
-import { useRouter, usePathname } from "next/navigation";
 import { useAssistantRuntime } from "@assistant-ui/react";
+import { PlusIcon, XIcon } from "lucide-react";
+import { MessageSquareIcon, TrashIcon } from "lucide-react";
 import { Thread } from "@/components/assistant-ui/thread";
+import { Button } from "@/components/ui/button";
 import { useSalesRuntime } from "@/lib/runtime-provider";
-import {
-  LogOutIcon,
-  MessageSquareIcon,
-  PlusIcon,
-  TrashIcon,
-  WorkflowIcon,
-} from "lucide-react";
 
-function SessionsSidebar() {
-  const {
-    sessions,
-    currentSessionId,
-    isLoadingSessions,
-    removeSession,
-    logout,
-  } = useSalesRuntime();
-
+// The chat/session-history experience that used to be the whole app (see
+// old chat-ui.tsx SessionsSidebar) is now a floating window that overlays
+// the page instead of docking as a full-height column, so its size stays
+// fixed regardless of viewport height and it never affects page layout.
+export function CopilotPanel({
+  open,
+  onClose,
+}: {
+  open: boolean;
+  onClose: () => void;
+}) {
+  const { sessions, currentSessionId, isLoadingSessions, removeSession } =
+    useSalesRuntime();
   const runtime = useAssistantRuntime();
 
-  const router = useRouter();
-  const pathname = usePathname();
+  if (!open) return null;
 
   const handleSwitchSession = async (sessionId: string) => {
     if (sessionId === currentSessionId) return;
@@ -49,33 +47,34 @@ function SessionsSidebar() {
   };
 
   return (
-    <aside className="flex h-full w-64 shrink-0 flex-col border-r bg-sidebar">
-      <div className="flex items-center justify-between px-4 py-3">
+    <aside className="fixed right-6 bottom-6 z-50 flex h-[min(640px,calc(100dvh-3rem))] w-96 flex-col overflow-hidden rounded-xl border bg-sidebar shadow-2xl">
+      <div className="flex shrink-0 items-center justify-between border-sidebar-border border-b px-4 py-3">
         <span className="font-semibold text-sidebar-foreground">
-          Sales Assistant
+          AI Copilot
         </span>
         <button
           type="button"
-          onClick={logout}
-          title="Sign out"
+          onClick={onClose}
+          title="Close copilot"
           className="rounded p-1 text-muted-foreground transition-colors hover:bg-sidebar-accent hover:text-sidebar-foreground"
         >
-          <LogOutIcon className="size-4" />
+          <XIcon className="size-4" />
         </button>
       </div>
 
-      <div className="px-3 pb-2">
-        <button
+      <div className="flex flex-col gap-2 px-3 pb-2">
+        <Button
           type="button"
+          variant="outline"
+          className="w-full justify-start gap-2"
           onClick={handleNewSession}
-          className="flex w-full items-center gap-2 rounded-lg border px-3 py-2 font-medium text-sm transition-colors hover:bg-sidebar-accent"
         >
           <PlusIcon className="size-4" />
           New Chat
-        </button>
+        </Button>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-2 py-1">
+      <div className="max-h-48 shrink-0 overflow-y-auto px-2 py-1">
         <p className="px-3 pt-0.5 pb-1 font-semibold text-sidebar-foreground/40 text-xs uppercase tracking-wide">
           Chats
         </p>
@@ -128,34 +127,9 @@ function SessionsSidebar() {
         )}
       </div>
 
-      <div className="border-sidebar-border border-t px-2 py-2">
-        <p className="px-3 pt-0.5 pb-1 font-semibold text-sidebar-foreground/40 text-xs uppercase tracking-wide">
-          Automation
-        </p>
-        <button
-          type="button"
-          onClick={() => router.push("/workflows")}
-          className={`flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-sidebar-accent ${
-            pathname === "/workflows"
-              ? "bg-sidebar-accent font-medium text-sidebar-foreground"
-              : "text-sidebar-foreground/70 hover:text-sidebar-foreground"
-          }`}
-        >
-          <WorkflowIcon className="size-4 shrink-0" />
-          Workflows
-        </button>
+      <div className="min-h-0 flex-1 border-sidebar-border border-t">
+        <Thread />
       </div>
     </aside>
-  );
-}
-
-export function ChatUI() {
-  return (
-    <div className="flex h-dvh">
-      <SessionsSidebar />
-      <main className="min-w-0 flex-1">
-        <Thread />
-      </main>
-    </div>
   );
 }

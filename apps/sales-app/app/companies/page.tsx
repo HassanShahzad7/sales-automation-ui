@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { DashboardPage } from "@/components/dashboard-page";
+import { CompaniesPage } from "@/components/companies-page";
 import { getAuth } from "@/lib/auth";
 
-export default function HomePage() {
+export default function CompaniesRoute() {
   const router = useRouter();
   const [isReady, setIsReady] = useState(false);
 
@@ -20,5 +20,5 @@ export default function HomePage() {
 
   if (!isReady) return null;
 
-  return <DashboardPage />;
+  return <CompaniesPage />;
 }

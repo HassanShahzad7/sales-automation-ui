@@ -1,0 +1,117 @@
+- generic [ref=f11e1]:
+  - button "Open Next.js Dev Tools" [ref=f11e7] [cursor=pointer]
+  - alert [ref=f11e11]
+  - generic [ref=f11e12]:
+    - generic [ref=f11e15]:
+      - generic [ref=f11e16]: Sales Assistant
+      - generic [ref=f11e22]:
+        - list [ref=f11e24]:
+          - listitem [ref=f11e25]:
+            - link "Dashboard" [ref=f11e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f11e33]:
+            - link "Chat" [ref=f11e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f11e38]:
+            - link "ICPs" [ref=f11e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f11e45]:
+            - link "Companies" [ref=f11e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f11e52]:
+            - link "Prospects" [ref=f11e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f11e60]:
+            - link "Outreach" [ref=f11e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f11e66]:
+            - link "Inbox" [ref=f11e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f11e72]:
+            - link "Meetings" [ref=f11e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f11e77]:
+            - link "Workflows" [ref=f11e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f11e84]:
+            - link "Integrations" [ref=f11e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f11e91]:
+            - link "Analytics" [ref=f11e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f11e95]:
+            - link "Settings" [ref=f11e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f11e102]:
+          - button "Automation" [expanded] [ref=f11e103]
+          - list [ref=f11e108]:
+            - listitem [ref=f11e109]:
+              - button "Apollo" [ref=f11e110]
+            - listitem [ref=f11e116]:
+              - button "LinkedIn" [ref=f11e117]
+            - listitem [ref=f11e124]:
+              - button "Gmail" [ref=f11e125]
+            - listitem [ref=f11e130]:
+              - button "Calendar" [ref=f11e131]
+      - generic [ref=f11e135]:
+        - combobox [active] [ref=f11e139]:
+          - generic: Actual Workspace
+        - list [ref=f11e140]:
+          - listitem [ref=f11e141]:
+            - button "Sign out" [ref=f11e142]
+    - main [ref=f11e147]:
+      - generic [ref=f11e148]:
+        - button "Toggle Sidebar" [ref=f11e150]
+        - generic [ref=f11e153]:
+          - generic [ref=f11e155]:
+            - heading "Outbound Command Center" [level=1] [ref=f11e156]
+            - paragraph [ref=f11e157]: A live view of your outbound pipeline, from ICP to booked meeting.
+          - generic [ref=f11e158]:
+            - generic [ref=f11e159]:
+              - generic [ref=f11e160]: Active ICPs
+              - generic [ref=f11e162]: "3"
+            - generic [ref=f11e164]:
+              - generic [ref=f11e165]: Companies Found
+              - generic [ref=f11e167]: "379"
+            - generic [ref=f11e169]:
+              - generic [ref=f11e170]: Prospects Enriched
+              - generic [ref=f11e172]: "1189"
+            - generic [ref=f11e174]:
+              - generic [ref=f11e175]: Ready for Outreach
+              - generic [ref=f11e177]: "101"
+            - generic [ref=f11e179]:
+              - generic [ref=f11e180]: Replies Requiring Attention
+              - generic [ref=f11e182]: "0"
+            - generic [ref=f11e184]:
+              - generic [ref=f11e185]: Meetings Booked
+              - generic [ref=f11e187]: "0"
+          - generic [ref=f11e197]:
+            - generic [ref=f11e198]: Outbound Pipeline
+            - generic [ref=f11e446]:
+              - generic [ref=f11e448]: No pipeline activity yet
+              - generic [ref=f11e449]: Pipeline stages will appear here once you start finding companies and prospects.
+          - generic [ref=f11e269]:
+            - generic [ref=f11e270]: Quick Actions
+            - generic [ref=f11e272]:
+              - button "Create ICP" [ref=f11e273]
+              - button "Find Companies" [ref=f11e274]
+              - button "Find Decision Makers" [ref=f11e275]
+              - button "Research Prospects" [ref=f11e276]
+              - button "Generate Outreach" [ref=f11e277]
+              - button "Review Replies" [ref=f11e278]
+          - generic [ref=f11e279]:
+            - generic [ref=f11e280]: Active Campaigns
+            - generic [ref=f11e451]:
+              - generic [ref=f11e453]: No campaigns yet
+              - generic [ref=f11e454]: Campaign tracking isn't available yet for real workspace data.
+          - generic [ref=f11e330]:
+            - generic [ref=f11e331]:
+              - generic [ref=f11e332]: Recent Activity
+              - generic [ref=f11e456]:
+                - generic [ref=f11e458]: No activity yet
+                - generic [ref=f11e459]: An activity log isn't available yet for real workspace data.
+            - generic [ref=f11e386]:
+              - generic [ref=f11e387]: Integration Status
+              - generic [ref=f11e461]:
+                - generic [ref=f11e463]: Integration status unavailable
+                - generic [ref=f11e464]: Health checks for connected integrations aren't available yet for real workspace data.

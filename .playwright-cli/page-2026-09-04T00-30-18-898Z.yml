@@ -1,0 +1,167 @@
+- generic [active] [ref=f2e1]:
+  - button "Open Next.js Dev Tools" [ref=f2e7] [cursor=pointer]
+  - alert [ref=f2e11]
+  - generic [ref=f2e12]:
+    - generic [ref=f2e15]:
+      - generic [ref=f2e16]: Sales Assistant
+      - generic [ref=f2e22]:
+        - list [ref=f2e24]:
+          - listitem [ref=f2e25]:
+            - link "Dashboard" [ref=f2e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f2e33]:
+            - link "Chat" [ref=f2e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f2e38]:
+            - link "ICPs" [ref=f2e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f2e45]:
+            - link "Companies" [ref=f2e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f2e52]:
+            - link "Prospects" [ref=f2e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f2e60]:
+            - link "Outreach" [ref=f2e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f2e66]:
+            - link "Inbox" [ref=f2e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f2e72]:
+            - link "Meetings" [ref=f2e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f2e77]:
+            - link "Workflows" [ref=f2e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f2e84]:
+            - link "Integrations" [ref=f2e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f2e91]:
+            - link "Analytics" [ref=f2e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f2e95]:
+            - link "Settings" [ref=f2e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f2e102]:
+          - button "Automation" [expanded] [ref=f2e103]
+          - list [ref=f2e108]:
+            - listitem [ref=f2e109]:
+              - button "Apollo" [ref=f2e110]
+            - listitem [ref=f2e116]:
+              - button "LinkedIn" [ref=f2e117]
+            - listitem [ref=f2e124]:
+              - button "Gmail" [ref=f2e125]
+            - listitem [ref=f2e130]:
+              - button "Calendar" [ref=f2e131]
+      - generic [ref=f2e135]:
+        - combobox [ref=f2e139]:
+          - generic: Demo Workspace
+        - list [ref=f2e140]:
+          - listitem [ref=f2e141]:
+            - button "Sign out" [ref=f2e142]
+    - main [ref=f2e147]:
+      - generic [ref=f2e148]:
+        - button "Toggle Sidebar" [ref=f2e150]
+        - generic [ref=f2e153]:
+          - generic [ref=f2e155]:
+            - heading "Prospects" [level=1] [ref=f2e156]
+            - paragraph [ref=f2e157]: Decision-makers enriched from your saved companies, tracked through outreach.
+          - generic [ref=f2e158]:
+            - combobox [ref=f2e159]:
+              - generic: All research statuses
+            - combobox [ref=f2e160]:
+              - generic: All outreach statuses
+            - combobox [ref=f2e161]:
+              - generic: All ICPs
+          - table [ref=f2e163]:
+            - rowgroup [ref=f2e164]:
+              - row [ref=f2e165]:
+                - columnheader "Name" [ref=f2e166]
+                - columnheader "Title" [ref=f2e167]
+                - columnheader "Company" [ref=f2e168]
+                - columnheader "Email" [ref=f2e169]
+                - columnheader "LinkedIn" [ref=f2e170]
+                - columnheader "ICP" [ref=f2e171]
+                - columnheader "Research" [ref=f2e172]
+                - columnheader "Outreach Status" [ref=f2e173]
+                - columnheader "Last Activity" [ref=f2e174]
+                - columnheader "Next Action" [ref=f2e175]
+            - rowgroup [ref=f2e176]:
+              - row [ref=f2e177] [cursor=pointer]:
+                - cell "Priya Nair" [ref=f2e178]
+                - cell "Director of Engineering" [ref=f2e179]
+                - cell "NimbusData" [ref=f2e180]
+                - cell "priya.nair@nimbusdata-demo.io" [ref=f2e181]
+                - cell [ref=f2e182]:
+                  - link "Profile" [ref=f2e183]:
+                    - /url: https://linkedin.com/in/priya-nair-demo
+                - cell "Series B SaaS — VP Eng" [ref=f2e188]
+                - cell "Completed" [ref=f2e189]
+                - cell "Meeting Booked" [ref=f2e191]
+                - cell "Aug 28, 2026" [ref=f2e193]
+                - cell "Prep for call" [ref=f2e194]
+              - row [ref=f2e195] [cursor=pointer]:
+                - cell "Jordan Lee" [ref=f2e196]
+                - cell "VP Engineering" [ref=f2e197]
+                - cell "Acme Corp" [ref=f2e198]
+                - cell "jordan.lee@acme-corp-demo.com" [ref=f2e199]
+                - cell [ref=f2e200]:
+                  - link "Profile" [ref=f2e201]:
+                    - /url: https://linkedin.com/in/jordan-lee-demo
+                - cell "Series B SaaS — VP Eng" [ref=f2e206]
+                - cell "Not Started" [ref=f2e207]
+                - cell "In Conversation" [ref=f2e209]
+                - cell "Sep 1, 2026" [ref=f2e211]
+                - cell "Continue conversation" [ref=f2e212]
+              - row [ref=f2e213] [cursor=pointer]:
+                - cell "Marcus Chen" [ref=f2e214]
+                - cell "Head of Platform" [ref=f2e215]
+                - cell "Vantage Cloud" [ref=f2e216]
+                - cell "marcus.chen@vantagecloud-demo.io" [ref=f2e217]
+                - cell [ref=f2e218]:
+                  - link "Profile" [ref=f2e219]:
+                    - /url: https://linkedin.com/in/marcus-chen-demo
+                - cell "Series B SaaS — VP Eng" [ref=f2e224]
+                - cell "Not Started" [ref=f2e225]
+                - cell "Not Contacted" [ref=f2e227]
+                - cell "Aug 30, 2026" [ref=f2e229]
+                - cell "Start research" [ref=f2e230]
+              - row [ref=f2e231] [cursor=pointer]:
+                - cell "Sam Osei" [ref=f2e232]
+                - cell "Director of Compliance" [ref=f2e233]
+                - cell "Kestrel Fintech" [ref=f2e234]
+                - cell "sam.osei@kestrelfintech-demo.com" [ref=f2e235]
+                - cell [ref=f2e236]:
+                  - link "Profile" [ref=f2e237]:
+                    - /url: https://linkedin.com/in/sam-osei-demo
+                - cell "Fintech Compliance Leads" [ref=f2e242]
+                - cell "Not Started" [ref=f2e243]
+                - cell "Not Interested" [ref=f2e245]
+                - cell "Aug 25, 2026" [ref=f2e247]
+                - cell "Review reply" [ref=f2e248]
+              - row [ref=f2e249] [cursor=pointer]:
+                - cell "Aisha Rahman" [ref=f2e250]
+                - cell "CFO" [ref=f2e251]
+                - cell "Ledger Trust" [ref=f2e252]
+                - cell "aisha.rahman@ledgertrust-demo.io" [ref=f2e253]
+                - cell [ref=f2e254]:
+                  - link "Profile" [ref=f2e255]:
+                    - /url: https://linkedin.com/in/aisha-rahman-demo
+                - cell "Fintech Compliance Leads" [ref=f2e260]
+                - cell "Not Started" [ref=f2e261]
+                - cell "Replied" [ref=f2e263]
+                - cell "Sep 2, 2026" [ref=f2e265]
+                - cell "Review reply" [ref=f2e266]
+              - row [ref=f2e267] [cursor=pointer]:
+                - cell "Elena Petrov" [ref=f2e268]
+                - cell "VP Operations" [ref=f2e269]
+                - cell "Bright Health Ops" [ref=f2e270]
+                - cell "elena.petrov@brighthealthops-demo.com" [ref=f2e271]
+                - cell [ref=f2e272]:
+                  - link "Profile" [ref=f2e273]:
+                    - /url: https://linkedin.com/in/elena-petrov-demo
+                - cell "Healthcare Ops Directors" [ref=f2e278]
+                - cell "Not Started" [ref=f2e279]
+                - cell "sent" [ref=f2e281]
+                - cell "Sep 3, 2026" [ref=f2e283]
+                - cell "Start research" [ref=f2e284]

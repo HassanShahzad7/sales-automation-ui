@@ -1,0 +1,98 @@
+- generic [active] [ref=f6e1]:
+  - button "Open Next.js Dev Tools" [ref=f6e7] [cursor=pointer]
+  - alert [ref=f6e11]
+  - generic [ref=f6e12]:
+    - generic [ref=f6e15]:
+      - generic [ref=f6e16]: Sales Assistant
+      - generic [ref=f6e22]:
+        - list [ref=f6e24]:
+          - listitem [ref=f6e25]:
+            - link "Dashboard" [ref=f6e26] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f6e33]:
+            - link "Chat" [ref=f6e34] [cursor=pointer]:
+              - /url: /chat
+          - listitem [ref=f6e38]:
+            - link "ICPs" [ref=f6e39] [cursor=pointer]:
+              - /url: /icps
+          - listitem [ref=f6e45]:
+            - link "Companies" [ref=f6e46] [cursor=pointer]:
+              - /url: /companies
+          - listitem [ref=f6e52]:
+            - link "Prospects" [ref=f6e53] [cursor=pointer]:
+              - /url: /prospects
+          - listitem [ref=f6e60]:
+            - link "Outreach" [ref=f6e61] [cursor=pointer]:
+              - /url: /outreach
+          - listitem [ref=f6e66]:
+            - link "Inbox" [ref=f6e67] [cursor=pointer]:
+              - /url: /inbox
+          - listitem [ref=f6e72]:
+            - link "Meetings" [ref=f6e73] [cursor=pointer]:
+              - /url: /meetings
+          - listitem [ref=f6e77]:
+            - link "Workflows" [ref=f6e78] [cursor=pointer]:
+              - /url: /workflows
+          - listitem [ref=f6e84]:
+            - link "Integrations" [ref=f6e85] [cursor=pointer]:
+              - /url: /integrations
+          - listitem [ref=f6e91]:
+            - link "Analytics" [ref=f6e92] [cursor=pointer]:
+              - /url: /analytics
+          - listitem [ref=f6e95]:
+            - link "Settings" [ref=f6e96] [cursor=pointer]:
+              - /url: /settings
+        - generic [ref=f6e102]:
+          - button "Automation" [expanded] [ref=f6e103]
+          - list [ref=f6e108]:
+            - listitem [ref=f6e109]:
+              - button "Apollo" [ref=f6e110]
+            - listitem [ref=f6e116]:
+              - button "LinkedIn" [ref=f6e117]
+            - listitem [ref=f6e124]:
+              - button "Gmail" [ref=f6e125]
+            - listitem [ref=f6e130]:
+              - button "Calendar" [ref=f6e131]
+      - generic [ref=f6e135]:
+        - combobox [ref=f6e139]:
+          - generic: Demo Workspace
+        - list [ref=f6e140]:
+          - listitem [ref=f6e141]:
+            - button "Sign out" [ref=f6e142]
+    - main [ref=f6e147]:
+      - generic [ref=f6e148]:
+        - button "Toggle Sidebar" [ref=f6e150]
+        - generic [ref=f6e153]:
+          - generic [ref=f6e154]:
+            - generic [ref=f6e155]:
+              - heading "ICPs" [level=1] [ref=f6e156]
+              - paragraph [ref=f6e157]: Ideal customer profiles used to find matching companies and decision-makers.
+            - button "Create ICP" [ref=f6e159]
+          - generic [ref=f6e160]:
+            - generic [ref=f6e162]:
+              - generic [ref=f6e169]:
+                - paragraph [ref=f6e170]: Series B SaaS — VP Eng
+                - paragraph [ref=f6e171]: US-based SaaS companies, 50-500 employees, targeting VPs of Engineering.
+              - generic [ref=f6e172]:
+                - link "View Companies" [ref=f6e173] [cursor=pointer]:
+                  - /url: /companies
+                - link "View Prospects" [ref=f6e174] [cursor=pointer]:
+                  - /url: /prospects
+            - generic [ref=f6e176]:
+              - generic [ref=f6e183]:
+                - paragraph [ref=f6e184]: Fintech Compliance Leads
+                - paragraph [ref=f6e185]: EU fintech companies, 200+ employees, targeting compliance and risk leaders.
+              - generic [ref=f6e186]:
+                - link "View Companies" [ref=f6e187] [cursor=pointer]:
+                  - /url: /companies
+                - link "View Prospects" [ref=f6e188] [cursor=pointer]:
+                  - /url: /prospects
+            - generic [ref=f6e190]:
+              - generic [ref=f6e197]:
+                - paragraph [ref=f6e198]: Healthcare Ops Directors
+                - paragraph [ref=f6e199]: US healthcare operators, 100-1000 employees, targeting Directors of Operations.
+              - generic [ref=f6e200]:
+                - link "View Companies" [ref=f6e201] [cursor=pointer]:
+                  - /url: /companies
+                - link "View Prospects" [ref=f6e202] [cursor=pointer]:
+                  - /url: /prospects

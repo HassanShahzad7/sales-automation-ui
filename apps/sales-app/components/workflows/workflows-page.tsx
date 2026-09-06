@@ -1,8 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
-import { ArrowLeftIcon, ExternalLinkIcon } from "lucide-react";
+import { ExternalLinkIcon } from "lucide-react";
+import { PageHeader } from "@/components/shared/page-header";
+import { Button } from "@/components/ui/button";
 import {
   listWorkflows,
   getLastExecution,
@@ -14,7 +15,6 @@ import { WorkflowFilters, type WorkflowFilter } from "./workflow-filters";
 import { WorkflowTable } from "./workflow-table";
 
 export function WorkflowsPage() {
-  const router = useRouter();
   const [workflows, setWorkflows] = useState<N8nWorkflow[]>([]);
   const [executions, setExecutions] = useState<
     Record<string, N8nExecution | null>
@@ -83,35 +83,23 @@ export function WorkflowsPage() {
   );
 
   return (
-    <div className="flex h-dvh flex-col gap-6 overflow-y-auto p-6">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={() => router.push("/")}
-            className="rounded-lg p-1.5 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-            title="Back to Sales Assistant"
-          >
-            <ArrowLeftIcon className="size-4" />
-          </button>
-          <div>
-            <h1 className="font-bold text-foreground text-xl">Workflows</h1>
-            <p className="text-muted-foreground text-sm">
-              Manage your n8n automation workflows
-            </p>
-          </div>
-        </div>
-        <a
-          href={n8nNewWorkflowUrl()}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 font-medium text-primary-foreground text-sm transition-colors hover:bg-primary/90"
-        >
-          <ExternalLinkIcon className="size-4" />
-          New Workflow
-        </a>
-      </div>
+    <div className="flex flex-col gap-6 p-6">
+      <PageHeader
+        title="Workflows"
+        description="Manage your n8n automation workflows"
+        actions={
+          <Button asChild>
+            <a
+              href={n8nNewWorkflowUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ExternalLinkIcon className="size-4" />
+              New Workflow
+            </a>
+          </Button>
+        }
+      />
 
       {/* Filters */}
       {!error && (

@@ -1,0 +1,156 @@
+- generic:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]
+  - alert
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic: Sales Assistant
+          - generic:
+            - generic:
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /
+                    - generic: Dashboard
+                - listitem:
+                  - link:
+                    - /url: /chat
+                    - generic: Chat
+                - listitem:
+                  - link:
+                    - /url: /icps
+                    - generic: ICPs
+                - listitem:
+                  - link:
+                    - /url: /companies
+                    - generic: Companies
+                - listitem:
+                  - link:
+                    - /url: /prospects
+                    - generic: Prospects
+                - listitem:
+                  - link:
+                    - /url: /outreach
+                    - generic: Outreach
+                - listitem:
+                  - link:
+                    - /url: /inbox
+                    - generic: Inbox
+                - listitem:
+                  - link:
+                    - /url: /meetings
+                    - generic: Meetings
+                - listitem:
+                  - link:
+                    - /url: /workflows
+                    - generic: Workflows
+                - listitem:
+                  - link:
+                    - /url: /integrations
+                    - generic: Integrations
+                - listitem:
+                  - link:
+                    - /url: /analytics
+                    - generic: Analytics
+                - listitem:
+                  - link:
+                    - /url: /settings
+                    - generic: Settings
+            - generic:
+              - generic:
+                - button [expanded]: Automation
+                - generic:
+                  - generic:
+                    - list:
+                      - listitem:
+                        - button:
+                          - generic: Apollo
+                      - listitem:
+                        - button:
+                          - generic: LinkedIn
+                      - listitem:
+                        - button:
+                          - generic: Gmail
+                      - listitem:
+                        - button:
+                          - generic: Calendar
+          - generic:
+            - generic:
+              - combobox [expanded]:
+                - generic: Actual Workspace
+            - list:
+              - listitem:
+                - button:
+                  - generic: Sign out
+    - main:
+      - generic:
+        - generic:
+          - button:
+            - generic: Toggle Sidebar
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=1]: Outbound Command Center
+                - paragraph: A live view of your outbound pipeline, from ICP to booked meeting.
+            - generic:
+              - generic:
+                - generic: Active ICPs
+                - generic: "3"
+              - generic:
+                - generic: Companies Found
+                - generic: "379"
+              - generic:
+                - generic: Prospects Enriched
+                - generic: "1189"
+              - generic:
+                - generic: Ready for Outreach
+                - generic: "101"
+              - generic:
+                - generic: Replies Requiring Attention
+                - generic: "0"
+              - generic:
+                - generic: Meetings Booked
+                - generic: "0"
+            - generic:
+              - generic: Outbound Pipeline
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: No pipeline activity yet
+                    - generic: Pipeline stages will appear here once you start finding companies and prospects.
+            - generic:
+              - generic: Quick Actions
+              - generic:
+                - button: Create ICP
+                - button: Find Companies
+                - button: Find Decision Makers
+                - button: Research Prospects
+                - button: Generate Outreach
+                - button: Review Replies
+            - generic:
+              - generic: Active Campaigns
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: No campaigns yet
+                    - generic: Campaign tracking isn't available yet for real workspace data.
+            - generic:
+              - generic:
+                - generic: Recent Activity
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: No activity yet
+                      - generic: An activity log isn't available yet for real workspace data.
+              - generic:
+                - generic: Integration Status
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Integration status unavailable
+                      - generic: Health checks for connected integrations aren't available yet for real workspace data.
+  - listbox [ref=e256]:
+    - option "Actual Workspace" [active] [selected] [ref=e257]
+    - option "Demo Workspace" [ref=e261]

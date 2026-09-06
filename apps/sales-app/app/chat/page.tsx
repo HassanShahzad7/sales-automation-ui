@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { DashboardPage } from "@/components/dashboard-page";
+import { Thread } from "@/components/assistant-ui/thread";
 import { getAuth } from "@/lib/auth";
 
-export default function HomePage() {
+export default function ChatRoute() {
   const router = useRouter();
   const [isReady, setIsReady] = useState(false);
 
@@ -20,5 +20,5 @@ export default function HomePage() {
 
   if (!isReady) return null;
 
-  return <DashboardPage />;
+  return <Thread />;
 }

@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { DashboardPage } from "@/components/dashboard-page";
+import { OutreachPage } from "@/components/outreach-page";
 import { getAuth } from "@/lib/auth";
 
-export default function HomePage() {
+export default function OutreachRoute() {
   const router = useRouter();
   const [isReady, setIsReady] = useState(false);
 
@@ -20,5 +20,5 @@ export default function HomePage() {
 
   if (!isReady) return null;
 
-  return <DashboardPage />;
+  return <OutreachPage />;
 }
